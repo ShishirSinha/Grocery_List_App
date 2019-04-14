@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/et1"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/dec_btn"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/et1"
+        android:layout_toStartOf="@+id/amount"
+        android:text="@string/dec" />
+
+    <Button
+        android:id="@+id/inc_btn"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/et1"
+        android:layout_toEndOf="@+id/amount"
+        android:text="@string/inc" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_below="@+id/et1"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/inc_btn"
+        android:text="@string/add" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/amount"/>
+
+</RelativeLayout>

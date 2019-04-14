@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Grocery List App</string>
+    <string name="dec">-</string>
+    <string name="inc">+</string>
+    <string name="add">ADD</string>
+    <string name="empty_item">Empty Item</string>
+    <string name="_0">0</string>
+    <string name="username">Username :</string>
+    <string name="password">Password :</string>
+    <string name="shishir">Shishir</string>
+    <string name="grocery_list_app">The Grocery List App</string>
+    <string name="login">LOGIN</string>
+</resources>
